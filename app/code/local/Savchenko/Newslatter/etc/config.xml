@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Savchenko_Newslatter>
+            <version>1.0.0</version>
+        </Savchenko_Newslatter>
+    </modules>
+
+    <global>
+        <helpers>
+            <savchenko_newslatter>
+                <class>Savchenko_Newslatter_Helper</class>
+            </savchenko_newslatter>
+        </helpers>
+
+        <blocks>
+            <savchenko_newslatter>
+                <class>Savchenko_Newslatter_Block</class>
+            </savchenko_newslatter>
+        </blocks>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <newslatter before="Mage_Adminhtml">Savchenko_Newslatter_Adminhtml</newslatter>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <savchenko_newslatter translate="" module="savchenko_newslatter">
+                    <title>Newslatter Savchenko</title>
+                    <action>adminhtml/newslatter/index</action>
+                    <sort_order>10</sort_order>
+                </savchenko_newslatter>
+            </children>
+        </system>
+    </menu>
+</config>
