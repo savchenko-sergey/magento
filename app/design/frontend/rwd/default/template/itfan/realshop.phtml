@@ -1,0 +1,9 @@
+<?php var_dump('itfan/realshops.phtml');
+
+$realshopId = Mage::app()->getRequest()->getParam('id');
+
+$item = Mage::getModel('itfan_realshops/realshops')->load($realshopId);
+
+echo $item->getTitle();
+
+?>

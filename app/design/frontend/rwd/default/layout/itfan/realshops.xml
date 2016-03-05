@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <realshops_realshops_index>
+        <reference name="content">
+            <block type="core/template" template="itfan/realshop.phtml"/>
+        </reference>
+    </realshops_realshops_index>
+</layout>

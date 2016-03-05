@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Itfan_Realshops>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Itfan_Realshops>
+    </modules>
+</config>

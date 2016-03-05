@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <itfan_realshops translate="" module="itfan_realshops">
+                    <title>Realshops</title>
+                    <action>adminhtml/realshops/index</action>
+                    <sort_order>10</sort_order>
+                </itfan_realshops>
+            </children>
+        </system>
+    </menu>
+</config>

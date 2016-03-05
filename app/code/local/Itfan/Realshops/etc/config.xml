@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Itfan_Realshops>
+            <version>1.1.0</version>
+        </Itfan_Realshops>
+    </modules>
+
+    <global>
+        <helpers>
+            <itfan_realshops>
+                <class>Itfan_Realshops_Helper</class>
+            </itfan_realshops>
+        </helpers>
+
+        <blocks>
+            <itfan_realshops>
+                <class>Itfan_Realshops_Block</class>
+            </itfan_realshops>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_edit_tab_inventory>Itfan_Realshops_Block_Adminhtml_Inventory</catalog_product_edit_tab_inventory>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        
+        <models>
+            <itfan_realshops>
+                <class>Itfan_Realshops_Model</class>
+                <resourceModel>itfan_realshops_resource</resourceModel>
+            </itfan_realshops>
+            <!--<itfan_realshops_realshops_view>-->
+            <itfan_realshops_resource>
+                <class>Itfan_Realshops_Model_Resource</class>
+                <entities>
+                    <realshops>
+                        <table>realshops</table>
+                    </realshops>
+                    <product>
+                        <table>realshops_products</table>
+                    </product>
+                </entities>
+            </itfan_realshops_resource>
+        </models>
+
+        <resources>
+            <itfan_realshops_setup>
+                <setup>
+                    <module>Itfan_Realshops</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </itfan_realshops_setup>
+        </resources>
+
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <itfan_realshops>
+                        <class>itfan_realshops/observer</class>
+                        <method>checkRealshopsInProduct</method>
+                    </itfan_realshops>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <itfan_realshops>
+                    <file>itfan/realshops.xml</file>
+                </itfan_realshops>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <realshops before="Mage_Adminhtml">Itfan_Realshops_Adminhtml</realshops>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+
+<!--        <layout>
+            <updates>
+                <itfan_realshops>
+                    <file>itfan/realshops.xml</file>
+                </itfan_realshops>
+            </updates>
+        </layout>-->
+    </admin>
+
+    <frontend>
+        <routers>
+            <itfan_realshops>
+                <use>standard</use>
+                <args>
+                    <module>Itfan_Realshops</module>
+                    <frontName>realshops</frontName>
+                </args>
+            </itfan_realshops>
+        </routers>
+
+        <layout>
+            <updates>
+                <itfan_realshops>
+                    <file>itfan/realshops.xml</file>
+                </itfan_realshops>
+            </updates>
+        </layout>
+    </frontend>
+</config>

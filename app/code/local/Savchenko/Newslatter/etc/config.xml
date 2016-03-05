@@ -18,6 +18,33 @@
                 <class>Savchenko_Newslatter_Block</class>
             </savchenko_newslatter>
         </blocks>
+
+        <models>
+            <savchenko_newslatter>
+                <class>Savchenko_Newslatter_Model</class>
+                <resourceModel>savchenko_newslatter_resource</resourceModel>
+            </savchenko_newslatter>
+            <savchenko_newslatter_resource>
+                <class>Savchenko_Newslatter_Model_Resource</class>
+                <entities>
+                    <newslatter>
+                        <table>savchenko_newslatter</table>
+                    </newslatter>
+                </entities>
+            </savchenko_newslatter_resource>
+        </models>
+
+        <resources>
+            <savchenko_newslatter_setup>
+                <setup>
+                    <module>Savchenko_Newslatter</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </savchenko_newslatter_setup>
+        </resources>
     </global>
 
     <admin>
@@ -30,5 +57,13 @@
                 </args>
             </adminhtml>
         </routers>
+
+        <layout>
+            <updates>
+                <savchenko_newslatter>
+                    <file>savchenko/newslatter.xml</file>
+                </savchenko_newslatter>
+            </updates>
+        </layout>
     </admin>
 </config>

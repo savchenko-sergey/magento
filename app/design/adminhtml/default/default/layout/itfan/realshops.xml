@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+
+    <adminhtml_realshops_index>
+        <reference name="content">
+            <block type="itfan_realshops/adminhtml_realshops" name="realshops" />
+        </reference>
+    </adminhtml_realshops_index>
+
+    <adminhtml_realshops_edit>
+        <reference name="content">
+            <block type="itfan_realshops/adminhtml_realshops_edit" name="realshops_edit" />
+        </reference>
+    </adminhtml_realshops_edit>
+</layout>
