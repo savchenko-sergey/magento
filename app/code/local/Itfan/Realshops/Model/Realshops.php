@@ -35,6 +35,10 @@ class Itfan_Realshops_Model_Realshops extends Mage_Core_Model_Abstract
 
             $newName = preg_replace('/[^a-zA-Z0-9_\-\.]/', '', $_FILES[$field]['name']);
 
+            $fileName = explode(".", $newName);
+
+            $newName = $fileName[0] . '_' . time() . '.' . $fileName[1];
+
             $uploader = new Varien_File_Uploader($field);
             $uploader->setFilesDispersion(false);
             $uploader->setAllowRenameFiles(false);
