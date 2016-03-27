@@ -5,10 +5,10 @@ class Itfan_Realshops_RealshopsController extends Mage_Core_Controller_Front_Act
     public function viewAction()
     {
         $this->loadLayout();
-        
+
 //        echo "<pre>" . print_r($this->getLayout(), true) . "<pre>";
 //        exit();
-        
+
         $this->renderLayout();
     }
 }

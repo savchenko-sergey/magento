@@ -6,7 +6,7 @@ class Itfan_Realshops_Model_Resource_Realshops extends Mage_Core_Model_Resource_
     {
         $this->_init('itfan_realshops/realshops', 'id');
     }
-    
+
     protected function _afterDelete()
     {
         $helper = Mage::helper('itfan_realshops');

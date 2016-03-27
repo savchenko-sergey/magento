@@ -31,16 +31,16 @@ class Itfan_Realshops_Block_Adminhtml_Realshops_Grid extends Mage_Adminhtml_Bloc
             'id',
             array(
                 'header' => $this->__('Id'),
-                'index'  => 'id',
-                'type'   => 'number'
+                'index' => 'id',
+                'type' => 'number'
             )
         );
         $this->addColumn(
             'title',
             array(
-                'header'    => $this->__('Title'),
-                'align'     => 'left',
-                'index'     => 'title',
+                'header' => $this->__('Title'),
+                'align' => 'left',
+                'index' => 'title',
             )
         );
 

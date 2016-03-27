@@ -21,9 +21,9 @@ class Itfan_Realshops_Block_Adminhtml_Realshops_Edit extends Mage_Adminhtml_Bloc
         $this->_addButton(
             'saveandcontinue',
             array(
-                'label'   => Mage::helper('itfan_realshops')->__('Save And Continue Edit'),
+                'label' => Mage::helper('itfan_realshops')->__('Save And Continue Edit'),
                 'onclick' => 'saveAndContinueEdit()',
-                'class'   => 'save',
+                'class' => 'save',
             ),
             -100
         );

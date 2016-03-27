@@ -19,11 +19,12 @@
             </itfan_realshops>
             <adminhtml>
                 <rewrite>
-                    <catalog_product_edit_tab_inventory>Itfan_Realshops_Block_Adminhtml_Inventory</catalog_product_edit_tab_inventory>
+                    <catalog_product_edit_tab_inventory>Itfan_Realshops_Block_Adminhtml_Inventory
+                    </catalog_product_edit_tab_inventory>
                 </rewrite>
             </adminhtml>
         </blocks>
-        
+
         <models>
             <itfan_realshops>
                 <class>Itfan_Realshops_Model</class>
@@ -88,13 +89,13 @@
             </adminhtml>
         </routers>
 
-<!--        <layout>
-            <updates>
-                <itfan_realshops>
-                    <file>itfan/realshops.xml</file>
-                </itfan_realshops>
-            </updates>
-        </layout>-->
+        <!--        <layout>
+                    <updates>
+                        <itfan_realshops>
+                            <file>itfan/realshops.xml</file>
+                        </itfan_realshops>
+                    </updates>
+                </layout>-->
     </admin>
 
     <frontend>

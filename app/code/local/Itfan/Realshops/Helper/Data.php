@@ -13,5 +13,5 @@ class Itfan_Realshops_Helper_Data extends Mage_Core_Helper_Abstract
     {
         return Mage::app()->getStore()->getBaseUrl() . 'index.php/realshops/realshops/view/id/' . $id;
     }
-    
+
 }

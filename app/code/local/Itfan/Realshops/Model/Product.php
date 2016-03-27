@@ -41,52 +41,52 @@ class Itfan_Realshops_Model_Product extends Mage_Core_Model_Abstract
             $element->save();
         }
     }
-    
-    public function getData($key='', $index=null) 
+
+    public function getData($key = '', $index = null)
     {
-        if('realshops' == $key) {
+        if ('realshops' == $key) {
             return $this->getRealshops();
-        }else {
+        } else {
             return parent::getData($key, $index);
         }
     }
-    
-    public function setData($key, $value=null) 
+
+    public function setData($key, $value = null)
     {
-        if('realshops' == $key) {
+        if ('realshops' == $key) {
             $this->setRealshops($value);
-        }else {
+        } else {
             parent::setData($key, $value);
         }
-        
+
         return $this;
     }
-    
-    public function hasData($key='', $index=null) 
+
+    public function hasData($key = '', $index = null)
     {
-        if('realshops' == $key) {
+        if ('realshops' == $key) {
             return $this->hasRealshops();
-        }else {
+        } else {
             return parent::hasData($key, $index);
         }
     }
-    
-    public function unsData($key='', $index=null) 
+
+    public function unsData($key = '', $index = null)
     {
-        if('realshops' == $key) {
+        if ('realshops' == $key) {
             return $this->unsRealshops();
-        }else {
+        } else {
             return parent::unsData($key, $index);
         }
     }
-    
-    public function setRealshops($ids) 
+
+    public function setRealshops($ids)
     {
-        
+
     }
-    
-    public function hasRealshops($ids) 
+
+    public function hasRealshops($ids)
     {
-        
+
     }
 }
